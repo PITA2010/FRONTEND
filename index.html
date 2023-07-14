@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="form-container">
+        <h3> Formulario Libro</h3>
+        <br>
+        <br>
+
+        <form>
+            <div>
+                <label for="name">Nombre Libro</label>
+                <input placeholder="Ingrese Nombre Libro" id="name" type="text" class="validate">
+            </div>
+            <div>
+                <label for="autor">Autor Libro</label>
+                <input placeholder="Ingrese Nombre Autor del Libro" id="autor" type="text" class="validate">
+            </div>
+            <div>
+                <label for="isbn">ISBN Libro</label>
+                <input placeholder="Ingrese Codigo Isbn del Libro" id="isbn" type="text" class="validate">
+            </div>
+            <div>
+                <label for="edition">Edición Libro</label>
+                <input placeholder="Ingrese Edición del Libro" id="edition" type="text" class="validate">
+            </div>
+            <br>
+            <br>
+            <div>
+                <button class="btn waves-effect waves-light" type="button" id="save" onclick="saveBook()">Guardar Libro
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+
+
+        <br>
+        <div>
+            <button class="btn waves-effect waves-light" type="button" id="save" onclick="getBooks()">Consultar Libros
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+        <div>
+            <button class="btn waves-effect waves-light" type="button" id="update" onclick="updateBooks()">Actualizar libros
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+
+        <img src="./im.jpg" >
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
